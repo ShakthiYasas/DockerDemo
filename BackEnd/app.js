@@ -11,7 +11,7 @@ app.use(middleware);
 
 app.get('/',(req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
-    res.json('Hey! Welcome to the Docker Demo!');
+    res.json('Hey! Welcome to the Docker Demo with Version Controlling!');
 });
 
 app.listen(5000, () => {
