@@ -16,5 +16,5 @@ app.get('/',(req, res) => {
 
 app.listen(5000, () => {
     // console.log('Demo started!');
-    console.log('Demo Started using ' + process.env.VERSION +'!');
+    console.log('Demo Started using the current version: ' + process.env.VERSION +'!');
 });
