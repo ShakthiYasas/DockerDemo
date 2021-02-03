@@ -14,6 +14,19 @@ app.get('/',(req, res) => {
     res.json('Hey! Welcome to the Docker Demo with Version Controlling!');
 });
 
+app.get('/products',(req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.json('This is the product endpoint template!');
+});
+
+app.post('/sales',(req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.status(201).send({
+        success: 'true',
+        message: 'New Sale Created'
+      })
+});
+
 app.listen(5000, () => {
     // console.log('Demo started!');
     console.log('Demo Started using the current version: ' + process.env.VERSION +'!');
